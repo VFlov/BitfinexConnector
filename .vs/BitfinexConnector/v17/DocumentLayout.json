@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD1D93BE-6606-4E40-9307-E07144F3CF05}|BitfinexConnector\\BitfinexConnector.csproj|c:\\users\\vaffle\\documents\\github\\bitfinexconnector\\bitfinexconnector\\bitfinexlohchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD1D93BE-6606-4E40-9307-E07144F3CF05}|BitfinexConnector\\BitfinexConnector.csproj|solutionrelative:bitfinexconnector\\bitfinexlohchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD1D93BE-6606-4E40-9307-E07144F3CF05}|BitfinexConnector\\BitfinexConnector.csproj|c:\\users\\vaffle\\documents\\github\\bitfinexconnector\\bitfinexconnector\\bitfinexconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD1D93BE-6606-4E40-9307-E07144F3CF05}|BitfinexConnector\\BitfinexConnector.csproj|solutionrelative:bitfinexconnector\\bitfinexconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E832291B-70E3-4322-98AD-B6DD8585F737}|BitfinexConnectorTests\\BitfinexConnectorTests.csproj|c:\\users\\vaffle\\documents\\github\\bitfinexconnector\\bitfinexconnectortests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E832291B-70E3-4322-98AD-B6DD8585F737}|BitfinexConnectorTests\\BitfinexConnectorTests.csproj|solutionrelative:bitfinexconnectortests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD1D93BE-6606-4E40-9307-E07144F3CF05}|BitfinexConnector\\BitfinexConnector.csproj|c:\\users\\vaffle\\documents\\github\\bitfinexconnector\\bitfinexconnector\\trade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD1D93BE-6606-4E40-9307-E07144F3CF05}|BitfinexConnector\\BitfinexConnector.csproj|solutionrelative:bitfinexconnector\\trade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D7A1AF-57D8-4A90-A544-FC5E393080B5}|BitfinexWPF\\BitfinexWPF.csproj|c:\\users\\vaffle\\documents\\github\\bitfinexconnector\\bitfinexwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D7A1AF-57D8-4A90-A544-FC5E393080B5}|BitfinexWPF\\BitfinexWPF.csproj|solutionrelative:bitfinexwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BitfinexLOHChecker.cs",
+              "DocumentMoniker": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnector\\BitfinexLOHChecker.cs",
+              "RelativeDocumentMoniker": "BitfinexConnector\\BitfinexLOHChecker.cs",
+              "ToolTip": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnector\\BitfinexLOHChecker.cs",
+              "RelativeToolTip": "BitfinexConnector\\BitfinexLOHChecker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T07:57:12.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BitfinexConnector.cs",
+              "DocumentMoniker": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnector\\BitfinexConnector.cs",
+              "RelativeDocumentMoniker": "BitfinexConnector\\BitfinexConnector.cs",
+              "ToolTip": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnector\\BitfinexConnector.cs",
+              "RelativeToolTip": "BitfinexConnector\\BitfinexConnector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T07:57:11.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Trade.cs",
+              "DocumentMoniker": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnector\\Trade.cs",
+              "RelativeDocumentMoniker": "BitfinexConnector\\Trade.cs",
+              "ToolTip": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnector\\Trade.cs",
+              "RelativeToolTip": "BitfinexConnector\\Trade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T07:57:09.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnectorTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "BitfinexConnectorTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexConnectorTests\\UnitTest1.cs",
+              "RelativeToolTip": "BitfinexConnectorTests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T07:55:40.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BitfinexWPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Vaffle\\Documents\\GitHub\\BitfinexConnector\\BitfinexWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BitfinexWPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T07:55:16.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

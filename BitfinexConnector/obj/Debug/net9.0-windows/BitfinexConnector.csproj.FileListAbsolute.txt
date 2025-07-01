@@ -1,0 +1,11 @@
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\bin\Debug\net9.0-windows\BitfinexConnector.deps.json
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\bin\Debug\net9.0-windows\BitfinexConnector.dll
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\bin\Debug\net9.0-windows\BitfinexConnector.pdb
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.AssemblyInfoInputs.cache
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.AssemblyInfo.cs
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.csproj.CoreCompileInputs.cache
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.dll
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\refint\BitfinexConnector.dll
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.pdb
+C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\ref\BitfinexConnector.dll
