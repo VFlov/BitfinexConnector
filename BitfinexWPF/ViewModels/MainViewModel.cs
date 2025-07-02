@@ -31,15 +31,19 @@ namespace BitfinexWPF.ViewModels
         private async void LoadBalancesAsync()
         {
             var portfolio = new Dictionary<string, decimal>
-        {
-            { "BTC", 1m },
-            { "XRP", 15000m },
-            { "XMR", 50m }
-        };
-            var balances = new ObservableCollection<PortfolioBalance>();
-            var usdBalances = new Dictionary<string, decimal>();
+            {
+                { "BTC", 1m },
+                { "XRP", 15000m },
+                { "XMR", 50m }
+            };
+            var usdBalances = await ConvertPortfolioToUSD(portfolio);
+            var balances = await ConvertToTargetCurrencies(usdBalances, new[] { "USD", "BTC", "XMR" });
+            Balances = balances;
+        }
 
-            // Convert all assets to USD
+        private async Task<Dictionary<string, decimal>> ConvertPortfolioToUSD(Dictionary<string, decimal> portfolio)
+        {
+            var usdBalances = new Dictionary<string, decimal>();
             foreach (var (asset, amount) in portfolio)
             {
                 if (asset == "USD")
@@ -47,51 +51,66 @@ namespace BitfinexWPF.ViewModels
                     usdBalances[asset] = amount;
                     continue;
                 }
-
-                var pair = $"{asset}USD";
-                var ticker = await _restClient.GetNewTradesAsync(pair, 1);
-                if (!ticker.Any())
-                    continue;
-
-                var price = ticker.First().Price;
-                usdBalances[asset] = amount * price;
+                var price = await GetPriceAsync(asset, "USD");
+                if (price.HasValue)
+                    usdBalances[asset] = amount * price.Value;
             }
-
-            // Convert USD to target currencies
-            foreach (var currency in new[] { "USD", "BTC", "XMR" })
-            {
-                decimal total = 0;
-                foreach (var (asset, usdAmount) in usdBalances)
-                {
-                    if (currency == "USD")
-                    {
-                        total += usdAmount;
-                        continue;
-                    }
-
-                    var pair = $"USD{currency}";
-                    var ticker = await _restClient.GetNewTradesAsync(pair, 1);
-                    if (!ticker.Any())
-                    {
-                        pair = $"{currency}USD";
-                        ticker = await _restClient.GetNewTradesAsync(pair, 1);
-                        if (!ticker.Any())
-                            continue;
-                        total += usdAmount / ticker.First().Price;
-                    }
-                    else
-                    {
-                        total += usdAmount * ticker.First().Price;
-                    }
-                }
-                balances.Add(new PortfolioBalance { Currency = currency, Balance = total });
-            }
-
-            Balances = balances;
+            return usdBalances;
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        private async Task<ObservableCollection<PortfolioBalance>> ConvertToTargetCurrencies(Dictionary<string, decimal> usdBalances, string[] targetCurrencies)
+        {
+            var balances = new ObservableCollection<PortfolioBalance>();
+            foreach (var currency in targetCurrencies)
+            {
+                var balance = await ConvertToCurrency(usdBalances, currency);
+                if (balance != null)
+                    balances.Add(balance);
+            }
+            return balances;
+        }
+
+        private async Task<PortfolioBalance> ConvertToCurrency(Dictionary<string, decimal> usdBalances, string currency)
+        {
+            decimal total = 0;
+            foreach (var (asset, usdAmount) in usdBalances)
+            {
+                if (currency == "USD")
+                {
+                    total += usdAmount;
+                    continue;
+                }
+                //Костыль т.к. нет правила в каком порядке создавать пару
+                var price = await GetPriceAsync("USD", currency);
+                if (!price.HasValue)
+                {
+                    price = await GetPriceAsync(currency, "USD");
+                    if (!price.HasValue)
+                        continue;
+                    total += usdAmount / price.Value;
+                }
+                else
+                    total += usdAmount * price.Value;
+            }
+            return total > 0 ? new PortfolioBalance { Currency = currency, Balance = total } : null;
+        }
+
+        private async Task<decimal?> GetPriceAsync(string baseCurrency, string quoteCurrency)
+        {
+            var pair = $"{baseCurrency}{quoteCurrency}";
+            try
+            {
+                var ticker = await _restClient.GetNewTradesAsync(pair, 1);
+                return ticker.Any() ? ticker.First().Price : null;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

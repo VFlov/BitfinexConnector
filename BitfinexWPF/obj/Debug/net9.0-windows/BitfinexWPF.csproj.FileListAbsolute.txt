@@ -9,7 +9,6 @@ C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\App.g.cs
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF_MarkupCompile.cache
-C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF_MarkupCompile.lref
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\MainWindow.baml
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF.g.resources
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +21,15 @@ C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF.pdb
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF.genruntimeconfig.cache
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\ref\BitfinexWPF.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\obj\Debug\net9.0-windows\BitfinexWPF.sourcelink.json
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Diagnostics.NETCore.Client.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Diagnostics.Runtime.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Options.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexWPF\bin\Debug\net9.0-windows\Microsoft.Extensions.Primitives.dll

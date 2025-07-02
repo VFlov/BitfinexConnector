@@ -26,8 +26,8 @@ namespace BitfinexConnector
             var response = await _httpClient.GetStreamAsync(url);
             Thread.Sleep(500);
             var trades = JsonSerializer.Deserialize<List<List<JsonElement>>>(response);
-            var result = new List<Trade>();
-
+            if (trades == null || !trades.Any())
+                throw new Exception();
             return trades!.Select(t => new Trade
             {
                 Id = t[0].ToString(), 

@@ -9,3 +9,5 @@ C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\n
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\refint\BitfinexConnector.dll
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.pdb
 C:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\ref\BitfinexConnector.dll
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.sourcelink.json
+c:\Users\Vaffle\Documents\GitHub\BitfinexConnector\BitfinexConnector\obj\Debug\net9.0-windows\BitfinexConnector.csproj.AssemblyReference.cache

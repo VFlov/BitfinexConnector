@@ -1,8 +1,48 @@
 
 //Код взять из книги "Высокопроизводительный код .NET Uotson B. Глава 2 - "Управление памятью"
 
+using Microsoft.Diagnostics.Runtime;
 
+class BitfinexLOHChecker
+{
+    public static void GetLOHObjectsCount()
+    {
+        using (DataTarget target = DataTarget.AttachToProcess(System.Diagnostics.Process.GetCurrentProcess().Id, false))
+        {
+            ClrRuntime runtime = target.ClrVersions[0].CreateRuntime();
+            ClrHeap heap = runtime.Heap;
 
+            if (!heap.CanWalkHeap)
+            {
+                return;
+            }
+
+            var gcCounts = new Dictionary<string, long>();
+
+            foreach (ClrSegment seg in heap.Segments)
+            {
+                string segmentName = seg.Kind.ToString();
+                long objectCount = seg.EnumerateObjects().Count();
+
+                if (seg.Kind == GCSegmentKind.Large)
+                {
+                    gcCounts[segmentName] = objectCount;
+                }
+                else if (seg.Kind == GCSegmentKind.Generation0 ||
+                         seg.Kind == GCSegmentKind.Generation1 ||
+                         seg.Kind == GCSegmentKind.Generation2)
+                {
+                    gcCounts[segmentName] = objectCount;
+                }
+            }
+            foreach (var entry in gcCounts)
+            {
+                Console.WriteLine($"{entry.Key}: {entry.Value}");
+            }
+        }
+    }
+}
+//Оригинальный код
 /*
 using Microsoft.Diagnostics.Runtime;
 using System;

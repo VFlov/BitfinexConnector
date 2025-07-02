@@ -1,7 +1,7 @@
 ﻿<Application x:Class="BitfinexWPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:BitfinexWPF"
+             xmlns:local="clr-namespace:BitfinexWPFClient"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

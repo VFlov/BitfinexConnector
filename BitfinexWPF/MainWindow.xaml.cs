@@ -22,5 +22,6 @@ namespace BitfinexWPF
             InitializeComponent();
             DataContext = new MainViewModel();
         }
+
     }
 }
